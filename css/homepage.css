@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav .top-li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top-nav .icon {
+  margin-right: 5px;
+}
+
+.left-menu li:not(:last-child):after,
+.right-menu li:not(:last-child):after {
+  content: "|";
+  margin-left: 20px;
+  color: #aaa;
+}
+p{
+    padding: 30px;
+}
+.main-nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.center-menu li{
+   display: inline-flex;       /* 🔴 Inline so text-align works */
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.center-menu li:not(last-child)::after{
+    content: "|";  
+    margin-left: 20px;
+    color: #aaa;
+}
+.p1{
+    text-align: center; 
+}
+img{
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 40%;
+}
+.p2{
+    text-align: center;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 150px;
+}
+ .container {
+      display: flex;
+      gap: 0px; /* space between pictures */
+    }
+    .container img {
+      width: 40%; /* each image takes half the row */
+      height: auto; /* keep aspect ratio */
+      display: block;
+    }
+   card-img-top{
+    width: 64px;
+    height: 97px;
+   };
+  
