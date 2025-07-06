@@ -59,6 +59,9 @@ p{
     margin-left: 20px;
     color: #aaa;
 }
+.card-title{
+  text-align: center;
+}
 .p1{
     text-align: center; 
 }
