@@ -10,6 +10,10 @@ body {
   padding: 10px 30px;
   border-bottom: 1px solid #eee;
   font-size: 14px;
+   background-color: #3a8b36; /* dark blue, you can change */
+  color: white;              /* text color */
+  padding: 10px 30px;
+  border-bottom: 1px solid #002244; /* slightly darker border */
 }
 
 .top-nav ul {
@@ -92,4 +96,40 @@ img{
     width: 64px;
     height: 97px;
    };
-  
+  /* Stack menu vertically on small screens */
+@media (max-width: 576px) {
+  .main-nav .center-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+  .main-nav .center-menu li {
+    list-style: none;
+  }
+}
+/* Stack menu vertically on small screens */
+@media (max-width: 576px) {
+  .main-nav .center-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+  .main-nav .center-menu li {
+    list-style: none;
+  }
+}
+.card {
+  transition: transform 0.3s ease; /* smooth animation */
+  cursor: pointer; /* shows pointer on hover */
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(1.05); /* zoom the card slightly */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* add a subtle shadow */
+  z-index: 10; /* make it appear on top */
+}
+
